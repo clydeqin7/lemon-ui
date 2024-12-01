@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import './style.css'
+import './index.scss'
 import App from './App.vue'
 import { createWebHistory, createRouter } from 'vue-router'
 
@@ -7,8 +7,7 @@ const history = createWebHistory();
 const router = createRouter({
   history,
   routes: [
-    { path: '/', component: () => import('./components/HelloWorld.vue') },
-    { path: '/hello', component: () => import('./components/HelloWorld.vue') },
+    { path: '/', component: () => import('./views/Home.vue') },
   ],
 })
 

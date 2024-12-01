@@ -2,12 +2,7 @@
 </script>
 
 <template>
-  <div>导航栏 |
-    <router-link to="/">首页</router-link> |
-    <router-link to="/hello">欢迎页</router-link> |
-  </div>
-  <hr>
-  <router-view ></router-view>
+  <router-view></router-view>
 </template>
 
 <style scoped>
